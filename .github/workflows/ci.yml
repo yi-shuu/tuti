@@ -1,0 +1,34 @@
+# 1 워크플로의 이름 지정
+name: Flutter Tuti Web CI
+# 2 워크플로가 시작될 조건 지정
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest # 3 실행 환경 지정
+    #4 실행스텝지정
+    steps:
+      - uses: actions/checkout@v4.1.1
+      
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2.12.0
+        with:
+          flutter-version: '3.19.5'
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Build Web
+        run: flutter build web --release
+
+      - name: Deploy to Github Pages
+        uses: peaceiris/actions-gh-pages@v3.9.3
+        with:
+          github_token: ${{ secrets.MY_SECRET_KEY}}
+          publish_dir: ./build/web

@@ -28,8 +28,8 @@ jobs:
     - name: Build Web
       run: flutter build web --release
 
-    # - name: Create CNAME File
-    #   run: echo "tuti20.com" > ./CNAME
+    - name: Create CNAME File
+      run: echo "tuti20.com" > ./CNAME
 
     - name: Deploy to Github Pages
       uses: peaceiris/actions-gh-pages@v3.9.3

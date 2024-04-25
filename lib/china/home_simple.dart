@@ -307,7 +307,135 @@ class HomeSimple extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(height: 30),
+            const SizedBox(height: 50),
+            Container(
+              margin: const EdgeInsets.only(left: 20),
+              child: const Text(
+                "Study in Korea",
+                style: TextStyle(
+                  fontSize: 26,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const SizedBox(width: 30),
+                  GestureDetector(
+                    onTap: () {
+                      Uri url = Uri.parse("https://www.hanyang.ac.kr/web/eng");
+                      launchInBrowswer(url);
+                    },
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        SizedBox(
+                          width: 150,
+                          child: Image.asset("images/hanyang.png"),
+                        ),
+                        const SizedBox(height: 10),
+                        const Text(
+                          "Hanyang Univ.",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: 70),
+                  GestureDetector(
+                    onTap: () {
+                      Uri url = Uri.parse(
+                          "https://www.khu.ac.kr/eng/user/contents/view.do?menuNo=300071");
+                      launchInBrowswer(url);
+                    },
+                    child: Column(
+                      children: [
+                        SizedBox(
+                          width: 200,
+                          child: Image.asset("images/kyunghee.png"),
+                        ),
+                        const SizedBox(height: 10),
+                        const Text(
+                          "Kyunghee Univ. (Seoul Campus)",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: 70),
+                  GestureDetector(
+                    onTap: () {
+                      Uri url = Uri.parse(
+                          "https://admission-global.skku.edu/eng/index.html");
+                      launchInBrowswer(url);
+                    },
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        SizedBox(
+                          width: 150,
+                          child: Image.asset("images/skku.png"),
+                        ),
+                        const SizedBox(height: 10),
+                        const Text(
+                          "Sungkyunkwan Univ.",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: 70),
+                  GestureDetector(
+                    onTap: () {
+                      Uri url = Uri.parse("https://www.yonsei.ac.kr/en_sc/");
+                      launchInBrowswer(url);
+                    },
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        SizedBox(
+                          width: 150,
+                          child: Image.asset("images/yonsei.png"),
+                        ),
+                        const SizedBox(height: 10),
+                        const Text(
+                          "Yonsei Univ.",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: 70),
+                  GestureDetector(
+                    onTap: () {
+                      Uri url = Uri.parse(
+                          "https://www.korea.edu/mbshome/mbs/en/index.do#none");
+                      launchInBrowswer(url);
+                    },
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Container(
+                          margin: const EdgeInsets.only(top: 10),
+                          width: 110,
+                          child: Image.asset("images/korea.png"),
+                        ),
+                        const SizedBox(height: 10),
+                        const Text(
+                          "Korea Univ.",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 50),
             Container(
               margin: const EdgeInsets.only(left: 20),
               child: const Text(
@@ -947,7 +1075,136 @@ class HomeSimple extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(height: 30),
+            const SizedBox(height: 150),
+            Container(
+              margin: const EdgeInsets.only(left: 20),
+              child: const Text(
+                "Study in Korea",
+                style: TextStyle(
+                  fontSize: 26,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const SizedBox(width: 30),
+                  GestureDetector(
+                    onTap: () {
+                      Uri url = Uri.parse("https://www.hanyang.ac.kr/web/eng");
+                      launchInBrowswer(url);
+                    },
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        SizedBox(
+                          width: 150,
+                          child: Image.asset("images/hanyang.png"),
+                        ),
+                        const SizedBox(height: 10),
+                        const Text(
+                          "Hanyang Univ.",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: 100),
+                  GestureDetector(
+                    onTap: () {
+                      Uri url = Uri.parse(
+                          "https://www.khu.ac.kr/eng/user/contents/view.do?menuNo=300071");
+                      launchInBrowswer(url);
+                    },
+                    child: Column(
+                      children: [
+                        SizedBox(
+                          // margin: const EdgeInsets.only(top: 10),
+                          width: 200,
+                          child: Image.asset("images/kyunghee.png"),
+                        ),
+                        const SizedBox(height: 10),
+                        const Text(
+                          "Kyunghee Univ. (Seoul Campus)",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: 100),
+                  GestureDetector(
+                    onTap: () {
+                      Uri url = Uri.parse(
+                          "https://admission-global.skku.edu/eng/index.html");
+                      launchInBrowswer(url);
+                    },
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        SizedBox(
+                          width: 150,
+                          child: Image.asset("images/skku.png"),
+                        ),
+                        const SizedBox(height: 10),
+                        const Text(
+                          "Sungkyunkwan Univ.",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: 100),
+                  GestureDetector(
+                    onTap: () {
+                      Uri url = Uri.parse("https://www.yonsei.ac.kr/en_sc/");
+                      launchInBrowswer(url);
+                    },
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        SizedBox(
+                          width: 150,
+                          child: Image.asset("images/yonsei.png"),
+                        ),
+                        const SizedBox(height: 10),
+                        const Text(
+                          "Yonsei Univ.",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: 100),
+                  GestureDetector(
+                    onTap: () {
+                      Uri url = Uri.parse(
+                          "https://www.korea.edu/mbshome/mbs/en/index.do#none");
+                      launchInBrowswer(url);
+                    },
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Container(
+                          margin: const EdgeInsets.only(top: 10),
+                          width: 110,
+                          child: Image.asset("images/korea.png"),
+                        ),
+                        const SizedBox(height: 10),
+                        const Text(
+                          "Korea Univ.",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 150),
             Container(
               margin: const EdgeInsets.only(left: 20),
               child: const Text(

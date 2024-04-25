@@ -102,6 +102,11 @@ flutter:
     - images/instagram.png
     - images/kakaologo.png
     - images/kpop.jpg
+    - images/kyunghee.png
+    - images/skku.png
+    - images/yonsei.png
+    - images/korea.png
+    - images/hanyang.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

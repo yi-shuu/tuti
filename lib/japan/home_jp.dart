@@ -144,7 +144,7 @@ class HomeJp extends StatelessWidget {
                   const SizedBox(width: 10),
                   GestureDetector(
                       onTap: () {
-                        Navigator.pushNamed(context, "/home-En");
+                        Navigator.pushNamed(context, "/home/en");
                       },
                       child: const Text("English")),
                   const SizedBox(width: 10),
@@ -152,9 +152,9 @@ class HomeJp extends StatelessWidget {
                   // const SizedBox(width: 10),
                   GestureDetector(
                       onTap: () {
-                        Navigator.pushNamed(context, '/home-Simple');
+                        Navigator.pushNamed(context, '/home/simple');
                       },
-                      child: const Text("汉语（简体）")),
+                      child: const Text("汉语(简体)")),
                   // const SizedBox(width: 10),
                   // const Text("中文（繁體）"),
                   // const SizedBox(width: 10),
@@ -165,65 +165,91 @@ class HomeJp extends StatelessWidget {
                 ],
               ),
             ),
-            Stack(
-              children: [
-                Container(
-                  color: Colors.lightGreen[800],
-                  width: size.width,
-                  height: 200,
-                ),
-                const SizedBox(
-                  height: 200,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        "特別な経験をお探しですか？",
-                        style: TextStyle(
-                          fontSize: 30,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      Text(
-                        "私たちは世界中の大学生のための様々な活動プログラムを一つの場所で紹介するプラットフォームです！今すぐ私たちのプラットフォームを訪問し、あなたの夢を育て、より広い世界に会いましょう！",
-                        style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ],
+            const SizedBox(height: 30),
+            const SizedBox(
+              height: 230,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "未来のグローバルリーダーに",
+                    style: TextStyle(
+                      fontSize: 28,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                ),
-                const SizedBox(width: 30),
-              ],
+                  Text(
+                    "なりたいですか？",
+                    style: TextStyle(
+                      fontSize: 28,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    "大学生の皆さん、世界舞台で輝く準備はできましたか？",
+                    style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.black,
+                    ),
+                  ),
+                  Text(
+                    "Tutiの革新的なAI教育プラットフォームがあなたを",
+                    style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.black,
+                    ),
+                  ),
+                  Text(
+                    "グローバルな才能にする生まれ変わる最適な仲間です。",
+                    style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.black,
+                    ),
+                  ),
+                  Text(
+                    "今すぐお問い合わせください！",
+                    style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.black,
+                    ),
+                  ),
+                ],
+              ),
             ),
             const SizedBox(height: 50),
             const Center(
               child: Text(
                 "登録する準備ができましたか？",
                 style: TextStyle(
-                  fontSize: 30,
+                  fontSize: 26,
                   fontWeight: FontWeight.bold,
                 ),
               ),
             ),
             const SizedBox(height: 30),
             Center(
-              child: Container(
-                width: 150,
-                height: 30,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20.0),
-                  color: Colors.lightGreen[800],
-                ),
-                child: const Center(
-                  child: Text(
-                    "今すぐ登録",
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.white,
+              child: GestureDetector(
+                onTap: () {
+                  Uri url = Uri.parse("https://forms.gle/aB26KV4AiKn332cz7");
+                  launchInBrowswer(url);
+                },
+                child: Container(
+                  width: 150,
+                  height: 30,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20.0),
+                    color: Colors.lightGreen[800],
+                  ),
+                  child: const Center(
+                    child: Text(
+                      "今すぐ登録",
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ),
@@ -297,7 +323,7 @@ class HomeJp extends StatelessWidget {
             Container(
               margin: const EdgeInsets.only(left: 20),
               child: const Text(
-                "Events",
+                "イベント",
                 style: TextStyle(
                   fontSize: 26,
                   fontWeight: FontWeight.bold,
@@ -512,6 +538,74 @@ class HomeJp extends StatelessWidget {
                       ],
                     ),
                   ),
+                  const SizedBox(width: 50),
+                  GestureDetector(
+                    onTap: () async {
+                      Uri url = Uri.parse(
+                          "https://overseas.mofa.go.kr/pt-ko/brd/m_9320/view.do?seq=1345691");
+                      launchInBrowswer(url);
+                    },
+                    child: Column(
+                      children: [
+                        SizedBox(
+                          width: 200,
+                          height: 295,
+                          child: Image.asset('images/kpop.jpg'),
+                        ),
+                        const SizedBox(
+                          width: 200,
+                          child: Text(
+                            "2024 K-Pop 월드 페스티벌",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 200,
+                          child: Text(
+                            "장소 리스본 박물관",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12,
+                              color: Colors.grey,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 200,
+                          child: Text(
+                            "기간 6월 8일(토)",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12,
+                              color: Colors.grey,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 200,
+                          child: Text(
+                            "시간 오후 3시",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12,
+                              color: Colors.grey,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 200,
+                          child: Text(
+                            "",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12,
+                              color: Colors.grey,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                   const SizedBox(width: 30),
                 ],
               ),
@@ -599,7 +693,7 @@ class HomeJp extends StatelessWidget {
                       ),
                       GestureDetector(
                         onTap: () {
-                          Navigator.pushNamed(context, '/company-Jp');
+                          Navigator.pushNamed(context, '/company/jp');
                         },
                         child: Container(
                           margin: const EdgeInsets.only(left: 25),
@@ -687,7 +781,7 @@ class HomeJp extends StatelessWidget {
                 const SizedBox(width: 10),
                 GestureDetector(
                     onTap: () {
-                      Navigator.pushNamed(context, "/home-En");
+                      Navigator.pushNamed(context, "/home/en");
                     },
                     child: const Text("English")),
                 const SizedBox(width: 10),
@@ -695,9 +789,9 @@ class HomeJp extends StatelessWidget {
                 // const SizedBox(width: 10),
                 GestureDetector(
                     onTap: () {
-                      Navigator.pushNamed(context, '/home-Simple');
+                      Navigator.pushNamed(context, '/home/simple');
                     },
-                    child: const Text("汉语（简体）")),
+                    child: const Text("汉语(简体)")),
                 // const SizedBox(width: 10),
                 // const Text("中文（繁體）"),
                 // const SizedBox(width: 10),
@@ -724,71 +818,72 @@ class HomeJp extends StatelessWidget {
             //   ),
             // ),
             // 배너 회사 소개
-            Stack(
+            const Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Container(
-                  color: Colors.lightGreen[800],
-                  width: size.width,
-                  height: 400,
+                SizedBox(height: 100),
+                Text(
+                  "未来のグローバルリーダーになりたいですか？",
+                  style: TextStyle(
+                    fontSize: 28,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    const Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        SizedBox(height: 40),
-                        Text(
-                          "世界を広げ、夢を叶える学生のための\n特別な経験をお探しですか？ \u{1F393}\u{2728}",
-                          style: TextStyle(
-                            fontSize: 28,
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        Text(
-                          "私たちは世界中の大学生のための様々な活動\nプログラムを一つの場所で紹介する\nプラットフォームです！ 🌍📚\n勉強、就職、文化交流、奉仕活動など様々な\n分野で体験して学べるプログラムを集めました\n今すぐ私たちのプラットフォームを訪問し\nあなたの夢を育てより広い世界に会いましょう！",
-                          style: TextStyle(
-                            fontSize: 22,
-                            color: Colors.white,
-                          ),
-                        ),
-                      ],
-                    ),
-                    Image.asset(
-                      'images/icon.png',
-                      scale: 2,
-                    ),
-                    const SizedBox(width: 30),
-                  ],
+                Text(
+                  "大学生の皆さん、世界舞台で輝く準備はできましたか？",
+                  style: TextStyle(
+                    fontSize: 22,
+                    color: Colors.black,
+                  ),
+                ),
+                Text(
+                  "Tutiの革新的なAI教育プラットフォームがあなたをグローバルな才能にする",
+                  style: TextStyle(
+                    fontSize: 22,
+                    color: Colors.black,
+                  ),
+                ),
+                Text(
+                  "生まれ変わる最適な仲間です。今すぐお問い合わせください！",
+                  style: TextStyle(
+                    fontSize: 22,
+                    color: Colors.black,
+                  ),
                 ),
               ],
             ),
-            const SizedBox(height: 50),
+            const SizedBox(height: 150),
             const Center(
               child: Text(
                 "登録する準備ができましたか？",
                 style: TextStyle(
-                  fontSize: 45,
+                  fontSize: 40,
                   fontWeight: FontWeight.bold,
                 ),
               ),
             ),
             const SizedBox(height: 30),
             Center(
-              child: Container(
-                width: 200,
-                height: 40,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20.0),
-                  color: Colors.lightGreen[800],
-                ),
-                child: const Center(
-                  child: Text(
-                    "今応募してください",
-                    style: TextStyle(
-                      fontSize: 18,
-                      color: Colors.white,
+              child: GestureDetector(
+                onTap: () {
+                  Uri url = Uri.parse("https://forms.gle/aB26KV4AiKn332cz7");
+                  launchInBrowswer(url);
+                },
+                child: Container(
+                  width: 200,
+                  height: 40,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20.0),
+                    color: Colors.lightGreen[800],
+                  ),
+                  child: const Center(
+                    child: Text(
+                      "今応募してください",
+                      style: TextStyle(
+                        fontSize: 18,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ),
@@ -815,15 +910,15 @@ class HomeJp extends StatelessWidget {
                     color: Colors.grey,
                   ),
                 ),
-                // SizedBox(width: 30),
-                // Text(
-                //   "#グローバル交流",
-                //   style: TextStyle(
-                //     fontSize: 18,
-                //     fontWeight: FontWeight.bold,
-                //     color: Colors.grey,
-                //   ),
-                // ),
+                SizedBox(width: 30),
+                Text(
+                  "#グローバル交流",
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.grey,
+                  ),
+                ),
                 SizedBox(width: 30),
                 Text(
                   "#進路探索",
@@ -853,7 +948,7 @@ class HomeJp extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: 30),
+            const SizedBox(height: 150),
             Container(
               margin: const EdgeInsets.only(left: 20),
               child: const Text(
@@ -864,211 +959,285 @@ class HomeJp extends StatelessWidget {
                 ),
               ),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                const SizedBox(width: 30),
-                GestureDetector(
-                  onTap: () async {
-                    Uri url = Uri.parse(
-                        "https://www.chf.or.kr/cont/view/fest/month/menu/210?thisPage=1&idx=109487&searchCategory1=600&searchCategory2=&searchCategory3=&searchField=all&searchDate=202404&weekSel=undefined&searchText=");
-                    launchInBrowswer(url);
-                  },
-                  child: Column(
-                    children: [
-                      SizedBox(
-                        width: 200,
-                        height: 300,
-                        child: Image.asset('images/moon.jpg'),
-                      ),
-                      const SizedBox(
-                        width: 200,
-                        child: Text(
-                          "2024 창덕궁 달빛기행(상반기)",
-                          style: TextStyle(fontWeight: FontWeight.bold),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const SizedBox(width: 30),
+                  GestureDetector(
+                    onTap: () async {
+                      Uri url = Uri.parse(
+                          "https://www.chf.or.kr/cont/view/fest/month/menu/210?thisPage=1&idx=109487&searchCategory1=600&searchCategory2=&searchCategory3=&searchField=all&searchDate=202404&weekSel=undefined&searchText=");
+                      launchInBrowswer(url);
+                    },
+                    child: Column(
+                      children: [
+                        SizedBox(
+                          width: 200,
+                          height: 300,
+                          child: Image.asset('images/moon.jpg'),
                         ),
-                      ),
-                      const SizedBox(
-                        width: 200,
-                        child: Text(
-                          "장소 창덕궁",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 12,
-                            color: Colors.grey,
+                        const SizedBox(
+                          width: 200,
+                          child: Text(
+                            "2024 창덕궁 달빛기행(상반기)",
+                            style: TextStyle(fontWeight: FontWeight.bold),
                           ),
                         ),
-                      ),
-                      const SizedBox(
-                        width: 200,
-                        child: Text(
-                          "기간 2024.4.11 ~ 2024.6.2",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 12,
-                            color: Colors.grey,
+                        const SizedBox(
+                          width: 200,
+                          child: Text(
+                            "장소 창덕궁",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12,
+                              color: Colors.grey,
+                            ),
                           ),
                         ),
-                      ),
-                      const SizedBox(
-                        width: 200,
-                        child: Text(
-                          "시간 (1부)19:20, 19:25, 19:30",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 12,
-                            color: Colors.grey,
+                        const SizedBox(
+                          width: 200,
+                          child: Text(
+                            "기간 2024.4.11 ~ 2024.6.2",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12,
+                              color: Colors.grey,
+                            ),
                           ),
                         ),
-                      ),
-                      const SizedBox(
-                        width: 200,
-                        child: Text(
-                          "        (2부)20:00, 20:05, 20:10",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 12,
-                            color: Colors.grey,
+                        const SizedBox(
+                          width: 200,
+                          child: Text(
+                            "시간 (1부)19:20, 19:25, 19:30",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12,
+                              color: Colors.grey,
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                        const SizedBox(
+                          width: 200,
+                          child: Text(
+                            "        (2부)20:00, 20:05, 20:10",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12,
+                              color: Colors.grey,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                GestureDetector(
-                  onTap: () async {
-                    Uri url = Uri.parse("https://www.k-illustrationfair.com/");
-                    launchInBrowswer(url);
-                  },
-                  child: Column(
-                    children: [
-                      SizedBox(
-                        width: 190,
-                        height: 300,
-                        child: Image.asset('images/seoul.jpg'),
-                      ),
-                      const SizedBox(
-                        width: 200,
-                        child: Text(
-                          "K-일러스트레이션페어 부산 2024",
-                          style: TextStyle(fontWeight: FontWeight.bold),
+                  const SizedBox(width: 40),
+                  GestureDetector(
+                    onTap: () async {
+                      Uri url =
+                          Uri.parse("https://www.k-illustrationfair.com/");
+                      launchInBrowswer(url);
+                    },
+                    child: Column(
+                      children: [
+                        SizedBox(
+                          width: 190,
+                          height: 300,
+                          child: Image.asset('images/seoul.jpg'),
                         ),
-                      ),
-                      const SizedBox(
-                        width: 200,
-                        child: Text(
-                          "장소 부산 벡스코 제2전시장 4홀",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 12,
-                            color: Colors.grey,
+                        const SizedBox(
+                          width: 200,
+                          child: Text(
+                            "K-일러스트레이션페어 부산 2024",
+                            style: TextStyle(fontWeight: FontWeight.bold),
                           ),
                         ),
-                      ),
-                      const SizedBox(
-                        width: 200,
-                        child: Text(
-                          "기간 2024.7.26(금)~28(일)",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 12,
-                            color: Colors.grey,
+                        const SizedBox(
+                          width: 200,
+                          child: Text(
+                            "장소 부산 벡스코 제2전시장 4홀",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12,
+                              color: Colors.grey,
+                            ),
                           ),
                         ),
-                      ),
-                      const SizedBox(
-                        width: 200,
-                        child: Text(
-                          "시간 오전 11시 ~ 오후 6시",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 12,
-                            color: Colors.grey,
+                        const SizedBox(
+                          width: 200,
+                          child: Text(
+                            "기간 2024.7.26(금)~28(일)",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12,
+                              color: Colors.grey,
+                            ),
                           ),
                         ),
-                      ),
-                      const SizedBox(
-                        width: 200,
-                        child: Text(
-                          "",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 12,
-                            color: Colors.grey,
+                        const SizedBox(
+                          width: 200,
+                          child: Text(
+                            "시간 오전 11시 ~ 오후 6시",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12,
+                              color: Colors.grey,
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                        const SizedBox(
+                          width: 200,
+                          child: Text(
+                            "",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12,
+                              color: Colors.grey,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                GestureDetector(
-                  onTap: () async {
-                    Uri url = Uri.parse("http://www.bba48.or.kr/");
-                    launchInBrowswer(url);
-                  },
-                  child: Column(
-                    children: [
-                      SizedBox(
-                        width: 200,
-                        height: 300,
-                        child: Image.asset('images/busan.jpg'),
-                      ),
-                      const SizedBox(
-                        width: 200,
-                        child: Text(
-                          "부산연등회",
-                          style: TextStyle(fontWeight: FontWeight.bold),
+                  const SizedBox(width: 40),
+                  GestureDetector(
+                    onTap: () async {
+                      Uri url = Uri.parse("http://www.bba48.or.kr/");
+                      launchInBrowswer(url);
+                    },
+                    child: Column(
+                      children: [
+                        SizedBox(
+                          width: 200,
+                          height: 300,
+                          child: Image.asset('images/busan.jpg'),
                         ),
-                      ),
-                      const SizedBox(
-                        width: 200,
-                        child: Text(
-                          "장소 송상현광장 및 부산시민공원 일원",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 12,
-                            color: Colors.grey,
+                        const SizedBox(
+                          width: 200,
+                          child: Text(
+                            "부산연등회",
+                            style: TextStyle(fontWeight: FontWeight.bold),
                           ),
                         ),
-                      ),
-                      const SizedBox(
-                        width: 200,
-                        child: Text(
-                          "기간 2024.4.26 ~ 2024.5.12",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 12,
-                            color: Colors.grey,
+                        const SizedBox(
+                          width: 200,
+                          child: Text(
+                            "장소 송상현광장 및 부산시민공원 일원",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12,
+                              color: Colors.grey,
+                            ),
                           ),
                         ),
-                      ),
-                      const SizedBox(
-                        width: 200,
-                        child: Text(
-                          "시간 오후 6시",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 12,
-                            color: Colors.grey,
+                        const SizedBox(
+                          width: 200,
+                          child: Text(
+                            "기간 2024.4.26 ~ 2024.5.12",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12,
+                              color: Colors.grey,
+                            ),
                           ),
                         ),
-                      ),
-                      const SizedBox(
-                        width: 200,
-                        child: Text(
-                          "",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 12,
-                            color: Colors.grey,
+                        const SizedBox(
+                          width: 200,
+                          child: Text(
+                            "시간 오후 6시",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12,
+                              color: Colors.grey,
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                        const SizedBox(
+                          width: 200,
+                          child: Text(
+                            "",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12,
+                              color: Colors.grey,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                const SizedBox(width: 30),
-              ],
+                  const SizedBox(width: 40),
+                  GestureDetector(
+                    onTap: () async {
+                      Uri url = Uri.parse(
+                          "https://overseas.mofa.go.kr/pt-ko/brd/m_9320/view.do?seq=1345691");
+                      launchInBrowswer(url);
+                    },
+                    child: Column(
+                      children: [
+                        SizedBox(
+                          width: 200,
+                          height: 295,
+                          child: Image.asset('images/kpop.jpg'),
+                        ),
+                        const SizedBox(
+                          width: 200,
+                          child: Text(
+                            "2024 K-Pop 월드 페스티벌",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 200,
+                          child: Text(
+                            "장소 리스본 박물관",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12,
+                              color: Colors.grey,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 200,
+                          child: Text(
+                            "기간 6월 8일(토)",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12,
+                              color: Colors.grey,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 200,
+                          child: Text(
+                            "시간 오후 3시",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12,
+                              color: Colors.grey,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 200,
+                          child: Text(
+                            "",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12,
+                              color: Colors.grey,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: 30),
+                ],
+              ),
             ),
             const SizedBox(height: 50),
             Stack(

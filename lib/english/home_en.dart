@@ -1022,7 +1022,11 @@ class HomeEn extends StatelessWidget {
                             style: TextStyle(fontSize: 17),
                           ),
                         ),
-                        onTap: () {},
+                        onTap: () {
+                          Uri url =
+                              Uri.parse("https://cafe.naver.com/tutiplatform");
+                          launchInBrowswer(url);
+                        },
                       ),
                     ],
                   ),

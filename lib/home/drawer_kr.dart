@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iqua_web/component/launch_browswer.dart';
 import 'package:iqua_web/home/contact_us_kr.dart';
 
 class DrawerKR extends StatelessWidget {
@@ -47,8 +48,12 @@ class DrawerKR extends StatelessWidget {
           const ListTile(
             title: Text("커뮤니티"),
           ),
-          const ListTile(
-            title: Text("스터디카페"),
+          ListTile(
+            title: const Text("스터디카페"),
+            onTap: () {
+              Uri url = Uri.parse("https://cafe.naver.com/tutiplatform");
+              launchInBrowswer(url);
+            },
           ),
           ListTile(
             title: const Text("상담받기"),

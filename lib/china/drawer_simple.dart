@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iqua_web/china/contact_us_simple.dart';
+import 'package:iqua_web/component/launch_browswer.dart';
 
 class DrawerSimple extends StatelessWidget {
   const DrawerSimple({super.key});
@@ -47,8 +48,12 @@ class DrawerSimple extends StatelessWidget {
           const ListTile(
             title: Text("社区"),
           ),
-          const ListTile(
-            title: Text("学习咖啡厅"),
+          ListTile(
+            title: const Text("学习咖啡厅"),
+            onTap: () {
+              Uri url = Uri.parse("https://cafe.naver.com/tutiplatform");
+              launchInBrowswer(url);
+            },
           ),
           ListTile(
             title: const Text("联系我们"),

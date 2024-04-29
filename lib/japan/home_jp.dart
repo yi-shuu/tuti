@@ -451,6 +451,152 @@ class HomeJp extends StatelessWidget {
             Container(
               margin: const EdgeInsets.only(left: 20),
               child: const Text(
+                "韓国大学 Issues",
+                style: TextStyle(
+                  fontSize: 26,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const SizedBox(width: 30),
+                  GestureDetector(
+                    onTap: () {
+                      Uri url = Uri.parse(
+                          "https://www.newshyu.com/news/articleView.html?idxno=1014133");
+                      launchInBrowswer(url);
+                    },
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        SizedBox(
+                          width: 230,
+                          child: Image.asset("images/hanyangissue.png"),
+                        ),
+                        const SizedBox(height: 10),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: 70),
+                  GestureDetector(
+                    onTap: () {
+                      Uri url = Uri.parse(
+                          "https://www.dtissue.com/news/articleView.html?idxno=8218");
+                      launchInBrowswer(url);
+                    },
+                    child: Column(
+                      children: [
+                        SizedBox(
+                          width: 230,
+                          child: Image.asset("images/yonseiissue.png"),
+                        ),
+                        const SizedBox(height: 10),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: 70),
+                  GestureDetector(
+                    onTap: () {
+                      Uri url = Uri.parse(
+                          "https://m.khan.co.kr/local/Incheon/article/202404241529001#c2b");
+                      launchInBrowswer(url);
+                    },
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        SizedBox(
+                          width: 230,
+                          child: Image.asset("images/inhaissue.png"),
+                        ),
+                        const SizedBox(height: 10),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 50),
+            Container(
+              margin: const EdgeInsets.only(left: 20),
+              child: const Text(
+                "韓国 Issues",
+                style: TextStyle(
+                  fontSize: 26,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const SizedBox(width: 30),
+                  GestureDetector(
+                    onTap: () {
+                      Uri url = Uri.parse(
+                          "https://www.worldkorean.net/news/articleView.html?idxno=47974");
+                      launchInBrowswer(url);
+                    },
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        SizedBox(
+                          width: 230,
+                          child: Image.asset("images/issue1.png"),
+                        ),
+                        const SizedBox(height: 10),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: 70),
+                  GestureDetector(
+                    onTap: () {
+                      Uri url = Uri.parse(
+                          "https://www.hankookilbo.com/News/Read/A2024032810090001190");
+                      launchInBrowswer(url);
+                    },
+                    child: Column(
+                      children: [
+                        SizedBox(
+                          width: 230,
+                          child: Image.asset("images/issue2.png"),
+                        ),
+                        const SizedBox(height: 10),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: 70),
+                  GestureDetector(
+                    onTap: () {
+                      Uri url = Uri.parse(
+                          "https://www.mediapen.com/news/view/914079");
+                      launchInBrowswer(url);
+                    },
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        SizedBox(
+                          width: 230,
+                          child: Image.asset("images/issue3.png"),
+                        ),
+                        const SizedBox(height: 10),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 50),
+            Container(
+              margin: const EdgeInsets.only(left: 20),
+              child: const Text(
                 "イベント",
                 style: TextStyle(
                   fontSize: 26,
@@ -1197,6 +1343,157 @@ class HomeJp extends StatelessWidget {
                           margin: const EdgeInsets.only(top: 10),
                           width: 110,
                           child: Image.asset("images/korea.png"),
+                        ),
+                        const SizedBox(height: 150),
+                        Container(
+                          margin: const EdgeInsets.only(left: 20),
+                          child: const Text(
+                            "韩国大学 Issue",
+                            style: TextStyle(
+                              fontSize: 26,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 20),
+                        SingleChildScrollView(
+                          scrollDirection: Axis.horizontal,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              const SizedBox(width: 30),
+                              GestureDetector(
+                                onTap: () {
+                                  Uri url = Uri.parse(
+                                      "https://m.khan.co.kr/local/Incheon/article/202404241529001#c2b");
+                                  launchInBrowswer(url);
+                                },
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    SizedBox(
+                                      width: 250,
+                                      child:
+                                          Image.asset("images/inhaissue.png"),
+                                    ),
+                                    const SizedBox(height: 10),
+                                  ],
+                                ),
+                              ),
+                              const SizedBox(width: 100),
+                              GestureDetector(
+                                onTap: () {
+                                  Uri url = Uri.parse(
+                                      "https://www.dtissue.com/news/articleView.html?idxno=8218");
+                                  launchInBrowswer(url);
+                                },
+                                child: Column(
+                                  children: [
+                                    SizedBox(
+                                      // margin: const EdgeInsets.only(top: 10),
+                                      width: 250,
+                                      child:
+                                          Image.asset("images/yonseiissue.png"),
+                                    ),
+                                    const SizedBox(height: 10),
+                                  ],
+                                ),
+                              ),
+                              const SizedBox(width: 100),
+                              GestureDetector(
+                                onTap: () {
+                                  Uri url = Uri.parse(
+                                      "https://www.newshyu.com/news/articleView.html?idxno=1014133");
+                                  launchInBrowswer(url);
+                                },
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    SizedBox(
+                                      width: 250,
+                                      child: Image.asset(
+                                          "images/hanyangissue.png"),
+                                    ),
+                                    const SizedBox(height: 10),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(height: 150),
+                        Container(
+                          margin: const EdgeInsets.only(left: 20),
+                          child: const Text(
+                            "韩国 Issue",
+                            style: TextStyle(
+                              fontSize: 26,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 20),
+                        SingleChildScrollView(
+                          scrollDirection: Axis.horizontal,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              const SizedBox(width: 30),
+                              GestureDetector(
+                                onTap: () {
+                                  Uri url = Uri.parse(
+                                      "https://www.worldkorean.net/news/articleView.html?idxno=47974");
+                                  launchInBrowswer(url);
+                                },
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    SizedBox(
+                                      width: 250,
+                                      child: Image.asset("images/issue1.png"),
+                                    ),
+                                    const SizedBox(height: 10),
+                                  ],
+                                ),
+                              ),
+                              const SizedBox(width: 100),
+                              GestureDetector(
+                                onTap: () {
+                                  Uri url = Uri.parse(
+                                      "https://www.hankookilbo.com/News/Read/A2024032810090001190");
+                                  launchInBrowswer(url);
+                                },
+                                child: Column(
+                                  children: [
+                                    SizedBox(
+                                      // margin: const EdgeInsets.only(top: 10),
+                                      width: 250,
+                                      child: Image.asset("images/issue2.png"),
+                                    ),
+                                    const SizedBox(height: 10),
+                                  ],
+                                ),
+                              ),
+                              const SizedBox(width: 100),
+                              GestureDetector(
+                                onTap: () {
+                                  Uri url = Uri.parse(
+                                      "https://www.mediapen.com/news/view/914079");
+                                  launchInBrowswer(url);
+                                },
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    SizedBox(
+                                      width: 250,
+                                      child: Image.asset("images/issue3.png"),
+                                    ),
+                                    const SizedBox(height: 10),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                         const SizedBox(height: 10),
                         const Text(
